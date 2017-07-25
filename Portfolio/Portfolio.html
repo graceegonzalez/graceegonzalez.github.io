@@ -10,7 +10,6 @@
       color: #ffffff;
       padding-top: 150px;
       padding-bottom: 150px;
-      color: #ffffff;
     }
     .img-circle {
     border-radius: 50%;
@@ -51,6 +50,11 @@
     .center {
     text-align: center;
     }
+    .contactStyle {
+      text-decoration:underline;
+      text-decoration-style: dashed;
+      text-decoration-style: #FFF0E2;
+    }
     #title {
   font-family: monospace;
   font-size:60px;
@@ -58,8 +62,10 @@
 }
   </style>
   <script>
-  window.alert("Welcome To Grace Gonzalez's Portfolio");
-
+    window.alert("Welcome To Grace Gonzalez's Portfolio");
+    function styleAbout() {
+      document.getElementById("styleAbout").innerHTML = " Hello World";
+    }
   </script>
   <title>Grace Gonzalez's Portfolio</title>
   </head>
@@ -71,7 +77,7 @@
 </div>
 
     <div class="block-size Block1 center">
-      <h2 = titleFont>About Me</h2>
+      <h2 = titleFont id="styleAbout">About Me</h2>
         <ul>
           <li>I was born in February of 2001</li>
           <li>I am currently 16 years old</li>
@@ -115,9 +121,12 @@
     <div class="block-size center Block6">
       <h2>Contact Information</h2>
         <!-- Add Link To Facebook/LinkedIn/etc. Here -->
-        <a href="https://www.facebook.com/" span style="color:0D245D">Facebook</span></a>
-        <a href="https://www.linkedin.com" span style="color:0D245D">LinkedIn</span></a>
-        <a href="https://www.google.com/" span style="color:0D245D">Etc.</span></a>
+        <ul>
+          <li> <span class="contactStyle">Facebook:</span> Grace Gonzalez</li>
+          <li> <span class="contactStyle">LinkedIn:</span> Grace Gonzalez</li>
+          <li> <span class="contactStyle">Instagram:</span> gracee.gonzalez</li>
+          <li> <span class="contactStyle">Email:</span> fernald.gonzalez@gmail.com</li>
+        <ul>
     </div>
   </body>
   <footer>
