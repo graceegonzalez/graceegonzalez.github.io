@@ -50,7 +50,7 @@
     .center {
     text-align: center;
     }
-    .contactStyle {
+    .underlineStyle {
       text-decoration:underline;
       text-decoration-style: dashed;
       text-decoration-style: #FFF0E2;
@@ -61,12 +61,7 @@
   font-size:70px;
 }
   </style>
-  <script>
-    window.alert("Welcome To Grace Gonzalez's Portfolio");
-    function styleAbout() {
-      document.getElementById("styleAbout").innerHTML = " Hello World";
-    }
-  </script>
+  <script type="text/javascript" src="portfolio.js"></script>
   <title>Grace Gonzalez's Portfolio</title>
   </head>
   <body>
@@ -77,11 +72,12 @@
 </div>
 
     <div class="block-size Block1 center">
-      <h2 = titleFont id="styleAbout">About Me</h2>
+      <h2 = titleFont onclick="styleAbout()" class="underlineStyle">About Me</h2>
         <ul>
           <li>I was born in February of 2001</li>
           <li>I am currently 16 years old</li>
         </ul>
+        <p id="styleAbout"></p>
     </div>
 
     <div class="block-size Block2 center">
@@ -122,10 +118,10 @@
       <h2>Contact Information</h2>
         <!-- Add Link To Facebook/LinkedIn/etc. Here -->
         <ul>
-          <li> <span class="contactStyle">Facebook:</span> Grace Gonzalez</li>
-          <li> <span class="contactStyle">LinkedIn:</span> Grace Gonzalez</li>
-          <li> <span class="contactStyle">Instagram:</span> gracee.gonzalez</li>
-          <li> <span class="contactStyle">Email:</span> fernald.gonzalez@gmail.com</li>
+          <li> <span class="underlineStyle">Facebook:</span> Grace Gonzalez</li>
+          <li> <span class="underlineStyle">LinkedIn:</span> Grace Gonzalez</li>
+          <li> <span class="underlineStyle">Instagram:</span> gracee.gonzalez</li>
+          <li> <span class="underlineStyle">Email:</span> fernald.gonzalez@gmail.com</li>
         <ul>
     </div>
   </body>
