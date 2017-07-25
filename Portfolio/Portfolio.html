@@ -1,6 +1,6 @@
 <html>
   <head>
-  <style>
+    <style>
     ul {
       list-style-type: none;
     }
@@ -13,12 +13,12 @@
     }
     .img-circle {
     border-radius: 50%;
-}
-  .img-responsive{
+    }
+    .img-responsive{
     max-width: 100%;
     height: auto;
     display:block;
-  }
+    }
     .Block1 {
     background-color: #F6E4F6;
     color: #8D877B;
@@ -43,10 +43,14 @@
       background-color:#FFF0E2;
       color:#8D877B;
     }
+    .Block7{
+      background-color:#FFF0E2;
+      color:#8D877B;
+    }
     .block-size {
     padding-top: 100px;
     padding-bottom: 70px;
-}
+    }
     .center {
     text-align: center;
     }
@@ -56,13 +60,19 @@
       text-decoration-style: #FFF0E2;
     }
     #title {
-  font-family: monospace;
-  font-size:60px;
-  font-size:70px;
+    font-family: monospace;
+    font-size:60px;
+    font-size:70px;
+    }
+   #center {
+     display:block;
+      margin:auto;
 }
-  </style>
-  <script type="text/javascript" src="portfolio.js"></script>
+
+    </style>
+    <script type="text/javascript" src="portfolio.js"></script>
   <title>Grace Gonzalez's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <!-- First Container -->
@@ -114,7 +124,21 @@
         </ul>
     </div>
 
-    <div class="block-size center Block6">
+    <div class="Block6" id="center">
+      <img class="mySlides" src="bird.JPG" style="width:40%">
+      <img class="mySlides" src="Flower2.JPG" style="width:40%">
+      <img class="mySlides" src="bird2.JPG" style="width:40%">
+      <img class="mySlides" src="Flower3.JPG" style="width:40%">
+      <img class="mySlides" src="bird3.JPG" style="width:40%">
+      <img class="mySlides" src="Flower4.JPG" style="width:40%">
+      <img class="mySlides" src="duck1.JPG" style="width:40%">
+      <img class="mySlides" src="Red_Bird.JPG" style="width:40%">
+      <img class="mySlides" src="duck2.JPG" style="width:40%">
+      <button class="w3-button w3-display-left" onclick="plusIMG(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusIMG(+1)">&#10095;</button>
+    </div>
+
+    <div class="block-size center Block7">
       <h2>Contact Information</h2>
         <!-- Add Link To Facebook/LinkedIn/etc. Here -->
         <ul>
