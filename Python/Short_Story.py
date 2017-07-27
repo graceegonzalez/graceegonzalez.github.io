@@ -7,20 +7,17 @@ You can't see the bus in sight.
 
 Do you want to run along the bus route to guarantee you will get a seat for the hour long commute?
 Or do you want to wait at the current bus stop but risk having to stand for the hour long commute?
-Type 'run' to go run along the bus route or 'wait' to wait for the bus at this stop.
 '''
 
 print(start)
-user_input = input()
+user_input = input("Type 'run' to go run along the bus route or 'wait' to wait for the next bus at this stop.")
 
 while user_input != "run" and user_input != "wait":
-    print("Type 'run' to go run along the bus route or 'wait' to wait for the bus at this stop.")
-    user_input = input()
+    user_input = input("Type 'run' to go run along the bus route or 'wait' to wait for the bus at this stop.")
 
 if user_input == "run":
-    print("You decide to run along the bus route. You make it 10 blocks and the bus isn't in sight. Do you want to run one more block to or wait at this stop?")
+    user_input = input("You decide to run along the bus route. You make it 10 blocks and the bus isn't in sight. Do you want to run one more block to or wait at this stop? Type 'run' if you want to run one more block or 'wait' if you want to wait at this stop.")
 
-    user_input = input()
     while user_input !="run" and user_input !="wait":
         print("Type 'run' to go run along the bus route or 'wait' to wait for the bus at this stop.")
         user_input = input()
@@ -34,11 +31,10 @@ if user_input == "run":
 
 if user_input == "wait":
     print("You choose to go wait at this bus stop. You ended up waiting 10 minutes and when the bus came there were no seats. Do you want to stand on this bus, or wait for the next bus to come?")
+    user_input=input("If you want to stand on the bus type 'stand' if you want to wait for the next bus type 'wait'")
 
-    user_input = input()
     while user_input !="stand" and user_input != "wait":
-        print("Type 'stand' to stand on this bus or 'wait' to wait for the next bus at this stop.")
-        user_input = input()
+            user_input = input("Type 'stand' to stand on this bus or 'wait' to wait for the next bus at this stop.")
 
     if user_input =="stand":
         print("You decided to stand on the bus. The bus got stuck in traffic for two hours. You ended up being late to an important meeting and you were fired.")
