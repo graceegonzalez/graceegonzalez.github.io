@@ -1,6 +1,6 @@
 //window.alert("Welcome To Grace Gonzalez's Portfolio");
 function styleAbout() {
-  document.getElementById("styleAbout").innerHTML = "A favorite pastime of mine is photography!";
+  document.getElementById("styleAbout").innerHTML = "I live in eastern Pennsylvania";
 }
 
 var slideIndex = 1; //First, set the slideIndex to 1. (First picture)
