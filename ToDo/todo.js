@@ -40,6 +40,9 @@ function createToDoEntryElement(toDoEntry) {
 	span.innerHTML =toDoText;
 	var toDoDetails = document.getElementById("toDoDetails");
 
+
+
+
 	toDoDetails.appendChild(span);
 	toDoDetails.appendChild(createNewCheckBox(id));
 	toDoDetails.appendChild(div);
@@ -47,7 +50,7 @@ function createToDoEntryElement(toDoEntry) {
 }
 
 function createNewCheckBox(id){
-	var checkbox=document.getElement('input');
+	var checkbox=document.createElement('input');
 	checkbox.type='checkbox';
 	checkbox.id=id;
 	return checkbox;
