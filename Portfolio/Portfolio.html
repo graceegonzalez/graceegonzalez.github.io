@@ -76,7 +76,29 @@
     font-size:70px;
     }
 
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
 
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .main {
+      padding: 16px;
+      margin-top: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
     </style>
     <script type="text/javascript" src="portfolio.js"></script>
   <title>Grace Gonzalez's Portfolio</title>
@@ -84,6 +106,18 @@
   </head>
   <body>
     <!-- First Container -->
+<div class="navbar">
+  <a id="home">Home</a>
+  <a id="aboutme">About Me</a>
+  <a id="education">Education</a>
+  <a id="work">Work</a>
+  <a id="kills">Skills</a>
+  <a id="volunteering">Volunteering</a>
+  <a id="extracurriculars">Extracurriculars</a>
+  <a id="myphotography">My Photography</a>
+  <a id="contactinformation">Contact Information</a>
+</div>
+
 <div class="block-size Block center">
   <h1 id="title"><blockquote>Grace Gonzalez</blockquote></h1>
   <img height="200px" width="200px" src="Gonzalez.JPG" class="img-responsive img-circle" style="display:inline" border="0" alt="photo IMG_5980_zpsfzvcmmem.jpg" onMouseOver="this.style.width='250px'" onMouseOut="this.style.width='200px'"/>

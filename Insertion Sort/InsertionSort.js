@@ -1,7 +1,23 @@
-var array=[4,44,8,7,3,5,9,2,1,22,69,50,35,57,38,42,79,63,54,69,95]
+function insertionSort(){
+
+var initialArray=document.getElementById("arrayInput").value;
+console.log(initialArray)
+var array=initialArray.split(",").map(Number);
+console.log(array)
+
+
+
 
 for (sortedIndex=1;sortedIndex<array.length-1;sortedIndex++){
-	sortedIndex=unsortedIndex
+	var temp = array[sortedIndex];
+	var unsortedIndex=sortedIndex;
 
-	
+	while (unsortedIndex>0&&array[unsortedIndex]<array[unsortedIndex-1]){
+		array[unsortedIndex]=array[unsortedIndex-1];
+		unsortedIndex=unsortedIndex-1;
+		array[unsortedIndex]=temp;
+	}	
+}
+document.getElementById("array").innerHTML=array;
+console.log(array)
 }
