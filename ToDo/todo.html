@@ -1,24 +1,22 @@
 <html>
   <head>
     <link href="todo.css" rel="stylesheet" />
-    <script src="todo.js" type="text/javascript"></script>
   </head>
   <body>
-  <center>
-    <div class="header centerChildren"><div id="headerText">My To Do List</div></div>
+    <div class="header"><div id="headerText">My To Do List</div></div>
     <div id="blogBody">
       <div id="blogBodyInner">
 
-        <div id="toDoEntryContainer" class="centerChildren">
+        <div id="toDoEntryContainer" >
           <textarea id="toDoEntryText" placeholder="Add To Do Here"></textarea>
           <br/>
           <button id="addEntryBtn" onclick="addEntryToDo()">Add entry</button>
-        </div>
-        <div id="toDoDetails"></div>
+          <button id="deleteEntryBtn" onclick="deleteEntryToDo()">Delt entry</button>
+        <div id="toDoDetails" ></div>
 
       </div>
     </div>
+        <script src="todo.js" type="text/javascript"></script>
 
-  </center>
   </body>
 </html>

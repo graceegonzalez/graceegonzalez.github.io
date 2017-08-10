@@ -1,9 +1,10 @@
 body {
-}
-
-.centerChildren {
   text-align: center;
 }
+
+/*.centerChildren {
+  text-align: center;
+}*/
 
 .header {
   font-size: 60px;
@@ -19,6 +20,15 @@ body {
 }
 
 #addEntryBtn {
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  color: maroon;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#deleteEntryBtn {
   width: 80px;
   height: 30px;
   background-color: white;
@@ -45,9 +55,9 @@ body {
 }
 
 #toDoDetails {
-  width: 800px;
+/*  width: 800px;
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 30px;*/
 }
 
 .toDoEntry {
