@@ -45,6 +45,7 @@ function refreshTodos() {
       var checkbox = document.createElement('input');
       checkbox.type = "checkbox";
       checkbox.setAttribute("data-id", todo.timestamp);
++6
 
       var span = document.createElement("span");
       var div = document.createElement("div");
